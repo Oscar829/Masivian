@@ -1,0 +1,43 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Arbol arbol = new Arbol(12);
+		
+		Nodo raiz = new Nodo(70);
+		
+		Nodo nodo1 = new Nodo(84);
+		Nodo nodo2 = new Nodo(85);
+		Nodo nodo3 = new Nodo(78);
+		Nodo nodo4 = new Nodo(76);
+		Nodo nodo5 = new Nodo(80);
+		Nodo nodo6 = new Nodo(49);
+		Nodo nodo7 = new Nodo(37);
+		Nodo nodo8 = new Nodo(54);
+		Nodo nodo9 = new Nodo(22);
+		Nodo nodo10 = new Nodo(40);
+		Nodo nodo11 = new Nodo(54);
+		Nodo nodo12 = new Nodo(51);
+		
+		
+		
+        arbol.agregarNodo(nodo1,raiz);
+        arbol.agregarNodo(nodo2,raiz);
+        arbol.agregarNodo(nodo3,raiz);
+        arbol.agregarNodo(nodo4,raiz);
+        arbol.agregarNodo(nodo5,raiz);
+        arbol.agregarNodo(nodo6,raiz);
+        arbol.agregarNodo(nodo7,raiz);
+        arbol.agregarNodo(nodo8,raiz);
+        arbol.agregarNodo(nodo9,raiz);
+        arbol.agregarNodo(nodo10,raiz);
+        arbol.agregarNodo(nodo11,raiz);
+        arbol.agregarNodo(nodo12,raiz);
+        
+      
+        
+    }
+
+}

@@ -1,0 +1,37 @@
+package Prueba;
+
+/**
+ * @author Oscar Alejandro Ortiz
+ *
+ */
+public class App {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Instancia de la clase nodo, con la raiz como parametro
+		 */
+		 Nodo arbol = new Nodo(70);
+		 
+		 /*
+		  * Se van agregando los nodos por medio de la instancia al metodo agregarNodo de la clase Nodo
+		  */
+		 arbol.agregarNodo(22);
+		 arbol.agregarNodo(37);
+		 arbol.agregarNodo(40);
+		 arbol.agregarNodo(49);
+		 arbol.agregarNodo(54);
+		 arbol.agregarNodo(51);
+		 arbol.agregarNodo(76);
+		 arbol.agregarNodo(78);
+		 arbol.agregarNodo(80);
+		 arbol.agregarNodo(84);
+		 arbol.agregarNodo(85);
+	       
+	        
+	     /*
+	      * Llamado al metodo de la clase nodo que sirve para recorrer el arbol    
+	      */
+	     arbol.mostrarInOrden();
+	}
+}

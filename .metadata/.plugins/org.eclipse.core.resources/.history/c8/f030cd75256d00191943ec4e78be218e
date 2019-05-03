@@ -1,0 +1,56 @@
+package Prueba;
+
+
+
+/**
+ * @author Oscar
+ *
+ */
+public class Nodo {
+
+    // Declaracion de variables
+    private int valor;
+
+    private Nodo padre;
+    private Nodo nodoIzquierdo;
+    private Nodo nodoDerecho;
+
+    
+    public Nodo(int valor) {
+        this.valor = valor;
+    }
+
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public Nodo getPadre() {
+        return padre;
+    }
+
+    public void setPadre(Nodo padre) {
+        this.padre = padre;
+    }
+
+    public Nodo getNodoIzquierdo() {
+        return nodoIzquierdo;
+    }
+
+    public void setNodoIzquierdo(Nodo nodoIzquierdo) {
+        this.nodoIzquierdo = nodoIzquierdo;
+    }
+
+    public Nodo getNodoDerecho() {
+        return nodoDerecho;
+    }
+
+    public void setNodoDerecho(Nodo nodoDerecho) {
+        this.nodoDerecho = nodoDerecho;
+    }
+
+}

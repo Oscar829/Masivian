@@ -1,0 +1,26 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		 Nodo root = new Nodo(70);
+	        root.add(22);
+	        root.add(37);
+	        root.add(40);
+	        root.add(49);
+	        root.add(54);
+	        root.add(51);
+	        root.add(76);
+	        root.add(78);
+	        root.add(80);
+	        root.add(84);
+	        root.add(85);
+	       
+	        
+	 
+	       
+	        System.out.println("Print in order");
+	        root.printInOrder();
+	}
+}

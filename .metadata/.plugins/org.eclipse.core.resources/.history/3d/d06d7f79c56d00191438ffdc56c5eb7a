@@ -1,0 +1,70 @@
+package Prueba;
+
+public class Arbol {
+
+	
+
+	    
+	    private Nodo raiz;
+
+	      
+	    public Arbol( int valor ) {
+	        this.raiz = new Nodo( valor );
+	    }
+
+	    public Arbol( Nodo raiz ) {
+	        this.raiz = raiz;
+	    }
+
+	   
+	    public Nodo getRaiz() {
+	        return raiz;
+	    }
+
+	    public void setRaiz(Nodo raiz) {
+	        this.raiz = raiz;
+	    }
+
+	
+
+	    void agregarNodo( Nodo nodo, Nodo raiz ) {
+
+    if ( raiz == null ) {
+        
+        this.setRaiz(nodo);
+    }
+    else {
+        
+        if ( nodo.getValor() <= raiz.getValor() ) {
+            
+            if (raiz.getNodoIzquierdo() == null) {
+                raiz.setNodoIzquierdo(nodo);
+                
+            }
+            else {
+                agregarNodo( nodo , raiz.getNodoIzquierdo() );
+            }
+        }
+        else {
+           
+            if (raiz.getNodoDerecho() == null) {
+                raiz.setNodoDerecho(nodo);
+            }
+            else {
+               agregarNodo( nodo, raiz.getNodoDerecho() );
+            }
+        }
+    }
+}
+
+	    public void agregarNodo( Nodo nodo ) {
+	        this.agregarNodo( nodo , this.raiz );
+	    	    }
+	 
+	    public void InOrder() {
+	    	if (nodo.getNodoIzquierdo() != null) {
+				raiz.getNodoIzquierdo().InOrder();
+				
+			}
+	    }
+}

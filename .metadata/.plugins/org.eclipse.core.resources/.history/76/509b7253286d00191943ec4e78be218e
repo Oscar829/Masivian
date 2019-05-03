@@ -1,0 +1,20 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Arbol arbol = new Arbol(12);
+		
+		Nodo raiz = new Nodo(70);
+		
+		Nodo nodo1 = new Nodo(84);
+		Nodo nodo2 = new Nodo(85);
+		Nodo nodo3 = new Nodo(78);
+		Nodo nodo1 = new Nodo(76);
+		
+		
+        arbol.agregarNodo(nodo1,raiz);
+    }
+
+}

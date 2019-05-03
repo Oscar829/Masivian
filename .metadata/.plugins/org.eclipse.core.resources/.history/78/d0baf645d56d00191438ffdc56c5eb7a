@@ -1,0 +1,27 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		 Nodo arbol = new Nodo(70);
+		 
+		 arbol.agregarNodo(22);
+		 arbol.agregarNodo(37);
+		 arbol.agregarNodo(40);
+		 arbol.agregarNodo(49);
+		 arbol.agregarNodo(54);
+		 arbol.agregarNodo(51);
+		 arbol.agregarNodo(76);
+		 arbol.agregarNodo(78);
+		 arbol.agregarNodo(80);
+		 arbol.agregarNodo(84);
+		 arbol.agregarNodo(85);
+	       
+	        
+	 
+	       
+	        System.out.println("Print in order");
+	        arbol.printInOrder();
+	}
+}

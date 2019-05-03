@@ -1,0 +1,73 @@
+package Prueba;
+
+
+
+/**
+ * @author Oscar
+ *
+ */
+public class Nodo {
+
+   
+	private Int value;
+    private Nodo left;
+    private Nodo right;
+ 
+    public Nodo(Int value) {
+        this.value = value;
+    }
+ 
+    public Integer getValue() {
+        return value;
+    }
+ 
+    public void setValue(Int value) {
+        this.value = value;
+    }
+ 
+    public Nodo getLeft() {
+        return left;
+    }
+ 
+    public void setLeft(Nodo left) {
+        this.left = left;
+    }
+ 
+    public Nodo getRight() {
+        return right;
+    }
+ 
+    public void setRight(Nodo right) {
+        this.right = right;
+    }
+ 
+    public void add(Int value) {
+        if (value < this.value) {
+            if (left != null) {
+                left.add(value);
+            } else {
+                left = new Nodo(value);
+            }
+        } else {
+            if (right != null) {
+                right.add(value);
+            } else {
+                right = new Nodo(value);
+            }
+        }
+    }
+ 
+    
+ 
+    public void printInOrder() {
+        if (left != null) {
+            left.printInOrder();
+        }
+        System.out.println(value);
+        if (right != null) {
+            right.printInOrder();
+        }
+    }
+ 
+
+}

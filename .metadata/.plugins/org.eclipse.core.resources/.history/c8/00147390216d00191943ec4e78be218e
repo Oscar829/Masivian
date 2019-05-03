@@ -1,0 +1,17 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+        Nodo root = new Nodo(10);
+        root.add(5);
+        root.add(15);
+        root.add(8);
+ 
+       
+        System.out.println("Pre orden");
+        root.printInOrder();
+        
+    }
+
+}

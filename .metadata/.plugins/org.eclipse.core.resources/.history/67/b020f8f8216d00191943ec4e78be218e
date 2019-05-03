@@ -1,0 +1,73 @@
+package Prueba;
+
+
+
+/**
+ * @author Oscar
+ *
+ */
+public class Nodo {
+    
+	private Integer valor;
+    private Nodo izquierda;
+    private Nodo derecha;
+ 
+    public Nodo(Integer valor) {
+        this.valor = valor;
+    }
+ 
+    public Integer getValor() {
+        return valor;
+    }
+ 
+    public void setValor(Integer valor) {
+        this.valor = valor;
+    }
+ 
+    public Nodo getIzquierda() {
+        return izquierda;
+    }
+ 
+    public void setIzquierda(Nodo izquierda) {
+        this.izquierda = izquierda;
+    }
+ 
+    public Nodo getDerecha() {
+        return derecha;
+    }
+ 
+    public void setDerecha(Nodo derecha) {
+        this.derecha = derecha;
+    }
+ 
+    public void add(Integer valor) {
+        if (valor < this.valor) {
+            if (izquierda != null) {
+                izquierda.add(valor);
+            } else {
+                izquierda = new Nodo(valor);
+            }
+        } else {
+            if (derecha != null) {
+                derecha.add(valor);
+            } else {
+                derecha = new Nodo(valor);
+            }
+        }
+    }
+ 
+   
+ 
+    public void printInOrder() {
+        if (izquierda != null) {
+            izquierda.printInOrder();
+        }
+        System.out.println(valor);
+        if (derecha != null) {
+            derecha.printInOrder();
+        }
+    }
+ 
+   
+ 
+}

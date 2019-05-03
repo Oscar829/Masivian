@@ -1,0 +1,17 @@
+package Prueba;
+
+public class App {
+	
+	public static void main(String[] args) {
+        Nodo arbol = new Nodo(10);
+        arbol.add(5);
+        arbol.add(15);
+        arbol.add(8);
+ 
+       
+        System.out.println("Pre orden");
+        arbol.printInOrder();
+        
+    }
+
+}
